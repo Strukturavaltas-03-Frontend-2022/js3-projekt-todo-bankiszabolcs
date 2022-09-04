@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/Strukturavaltas-03-Frontend-2022/js3-projekt-todo-bankiszabolcs/issues"
   },
-  "homepage": "https://github.com/Strukturavaltas-03-Frontend-2022/js3-projekt-todo-bankiszabolcs#readme"
+  "homepage": "https://github.com/Strukturavaltas-03-Frontend-2022/js3-projekt-todo-bankiszabolcs#readme",
+  "devDependencies": {
+    "eslint": "^8.23.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0"
+  }
 }

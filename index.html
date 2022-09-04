@@ -15,17 +15,39 @@
         <p class="date" id="date">10-15-2020</p>
         <form class="inputContainer">
             <input class="input" placeholder="Take the garbage out" type="text">
-            <button type="submit"><i class="fa-duotone fa-plus"></i></button>
+            <button class="add" type="submit"><i class="fa-duotone fa-plus"></i></button>
         </form>
+        <p class="noToDos">Time to chill! You have no todos!</p>
+        <p class="pendingItems"></p>
         <div class="toDoContainer">
             <ul class="toDoList">
                 <!-- <div class="toDoList__item">
-                    <li>
-                    </li>
+                    <li></li>
+                    <button class="button--checked"> Pipa</button>
+                    <button class="button--trash"> Kuka</button>
                 </div> -->
             </ul>
         </div>
+        <p class="numbCompletedItems"></p>
+        <div class="completedContainer">
+            <ul class="completedList">
+                <!-- <div class="toDoList__item">
+                    <li></li>
+                    <button class="button--checked"> Pipa</button>
+                    <button class="button--trash"> Kuka</button>
+                </div> -->
+            </ul>
+        </div>
+        <div class="bottomContainer">
+            <p class="hideComplete"> <input type="checkbox" class="checkit" name="checkit" id="checkit" value="1" />
+                <label for="checkit" name="hideShow" id="hideshow">Hide Complete</label></p>
+            <p class="clearAll">Clear All</p>
+        </div>
     </div>
+
+   
+
+
     <script type="module" src="app.js"></script>
 </body>
 </html>

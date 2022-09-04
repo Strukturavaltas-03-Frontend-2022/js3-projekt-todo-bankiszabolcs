@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+
 }
 
 body{
@@ -16,12 +17,130 @@ h1{
     color:#ff4e5d;
     margin: 0;
     text-align: left;
+    font-size: larger;
 }
 
 .wrapper{
-    width: 500px;
+    width: 400px;
     margin: 0 auto;
     background-color: white;
     border-radius: 10px;
     padding: 10px;
+}
+
+.inputContainer{
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    column-gap: 5px;
+}
+
+.input{
+    width: 100%;
+    height: 40px;
+    border: none;
+    border: 1px solid grey;
+    border-radius: 3px;
+    font-size: 1.1rem;
+}
+
+button.add{
+    width: 60px;
+    height: 40px;
+    cursor: pointer;
+    background-color: rgb(192, 192, 192);
+    border: none;
+    border-radius: 3px;
+    transition: all .3s ease;
+}
+
+button.add:hover{
+    background-color: rgb(133, 133, 133);
+}
+
+.add i{
+    font-size: large;
+    color: white
+    
+}
+
+.toDoContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toDoList{
+    min-width: 50%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.toDoList__item{
+    margin: 0.5rem;
+    background: rgb(162, 162, 162);
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s ease;
+}
+
+.toDoList__item li{
+    flex:1
+}
+
+.button--checked, .button--trash{
+    background: purple;
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.fa-trash, .fa-check{
+pointer-events: none;
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: .5;
+}
+
+.fall{
+    transform: translateY(8rem) rotateZ(20deg) ;
+    opacity: 0
+}
+
+.completedContainer{
+    display: none;
+}
+
+.numbCompletedItems{
+    display: none;
+}
+
+.noToDos{
+    display: block;
+}
+
+.bottomContainer{
+    display: none;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.hideComplete{
+    cursor: pointer;
+}
+
+#checkit{
+    opacity:0; 
+    position: relative;
+    left: 30px;
 }
