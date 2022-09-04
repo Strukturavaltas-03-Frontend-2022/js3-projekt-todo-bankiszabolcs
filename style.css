@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+   background-image: linear-gradient(#ff584a, #ff4e5d);
+   text-align: center;    
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+}
+
+h1{
+    color: white;
+}
+
+.date{
+    color:#ff4e5d;
+    margin: 0;
+    text-align: left;
+}
+
+.wrapper{
+    width: 500px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
