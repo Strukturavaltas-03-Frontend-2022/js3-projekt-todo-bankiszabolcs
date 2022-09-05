@@ -56,7 +56,6 @@ export function getTodos() {
 export function removeTodos(todo) {
   const todos = getLocalStorage();
   const toDoIndex = todo.children[1].innerText;
-  console.log(todos);
   todos.splice(todos.indexOf(toDoIndex), 1);
-  localStorage.setItem('todos', JSON.stringify(todos))
+  localStorage.setItem('todos', JSON.stringify(todos));
 }

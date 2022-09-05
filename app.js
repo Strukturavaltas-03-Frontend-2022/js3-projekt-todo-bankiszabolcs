@@ -18,7 +18,7 @@ const now = new Date();
 const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 
 // Event Listeners
-window.addEventListener('DOMContentLoaded', getTodos)
+window.addEventListener('DOMContentLoaded', getTodos);
 button.addEventListener('click', addToDo);
 toDoList.addEventListener('click', deleteItem);
 // toDoList.addEventListener('click', addToCompleted);
@@ -112,11 +112,10 @@ function addToDo(event) {
  */
 function deleteItem(e) {
   const actualItem = e.target;
-  console.log(actualItem);
   if (actualItem.classList[0] === 'button--trash') {
     actualItem.parentElement.classList.add('fall');
     countPending();
-    removeTodos(actualItem.parentElement)
+    removeTodos(actualItem.parentElement);
     actualItem.parentElement.addEventListener('transitionend', () => {
       actualItem.parentElement.remove();
       pendingItems.innerText = `You have ${toDoList.childElementCount} pending items`;
@@ -164,11 +163,10 @@ function showOrHide() {
 
 function clearAll() {
   const toDos = toDoList.children;
-  console.log('fdfd');
   Array.from(toDos).forEach((item) => item.remove());
   document.querySelector('.noToDos').style.display = 'block';
   pendingItems.style.display = 'none';
   bottomContainer.style.display = 'none';
   numbCompletedItems.style.display = 'none';
-  localStorage.clear()
+  localStorage.clear();
 }
