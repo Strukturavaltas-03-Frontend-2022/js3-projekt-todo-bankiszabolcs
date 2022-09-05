@@ -70,13 +70,15 @@ button.add:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all .5s ease;
 }
 
-.toDoList{
-    min-width: 50%;
+.toDoList, .completedList{
+    width: 85%;
     list-style: none;
     margin: 0;
     padding: 0;
+    transition: all .5s ease;
 }
 
 .toDoList__item{
@@ -86,7 +88,7 @@ button.add:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all .5s ease;
+    transition: all 1s ease;
 }
 
 .toDoList__item li{
@@ -106,6 +108,17 @@ button.add:hover{
 pointer-events: none;
 }
 
+.button--trash{
+    opacity: 0;
+    background: rgb(235, 72, 72);
+}
+
+.toDoList__item:hover .button--trash {
+    transition: all 1s ease;
+    opacity: 1
+}
+
+
 .completed{
     text-decoration: line-through;
     opacity: .5;
@@ -118,6 +131,8 @@ pointer-events: none;
 
 .completedContainer{
     display: none;
+    justify-content: center;
+    align-items: center;
 }
 
 .numbCompletedItems{
@@ -128,6 +143,10 @@ pointer-events: none;
     display: block;
 }
 
+.clink{
+    font-size: 2rem
+}
+
 .bottomContainer{
     display: none;
     gap: 40px;
@@ -135,7 +154,7 @@ pointer-events: none;
     align-items: center;
 }
 
-.hideComplete{
+.hideComplete, .clearAll {
     cursor: pointer;
 }
 
@@ -143,4 +162,8 @@ pointer-events: none;
     opacity:0; 
     position: relative;
     left: 30px;
+}
+
+.completedDiv{
+    height: 50px;
 }

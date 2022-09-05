@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/1a12b8ef1c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
     <title>TODO</title>
 </head>
 <body>
@@ -17,7 +17,8 @@
             <input class="input" placeholder="Take the garbage out" type="text">
             <button class="add" type="submit"><i class="fa-duotone fa-plus"></i></button>
         </form>
-        <p class="noToDos">Time to chill! You have no todos!</p>
+        <div class="noToDos"><p>Time to chill! You have no todos! </p> <p class="clink">🥂</p> </div>
+        
         <p class="pendingItems"></p>
         <div class="toDoContainer">
             <ul class="toDoList">
@@ -40,7 +41,7 @@
         </div>
         <div class="bottomContainer">
             <p class="hideComplete"> <input type="checkbox" class="checkit" name="checkit" id="checkit" value="1" />
-                <label for="checkit" name="hideShow" id="hideshow">Hide Complete</label></p>
+                <label class="hideComplete" for="checkit" name="hideShow" id="hideshow">Hide Complete</label></p>
             <p class="clearAll">Clear All</p>
         </div>
     </div>
